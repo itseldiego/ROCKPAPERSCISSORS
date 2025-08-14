@@ -125,4 +125,6 @@ playGame();
 // playRound(humanChoice, computerChoice);
 
 
+///to fix, final score could be misleading as it prints after every loop
+
 
