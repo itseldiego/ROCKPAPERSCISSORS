@@ -1,10 +1,6 @@
 
 //prints user a welcome message
-function welcomeMessage()
-{
-console.log("hello world, Welcome to: !")
-console.log("ROCK PAPER SCISSORS GAME!!!")
-}
+
         
 
 //creatfunction for computer choice **use math.random functin 
@@ -35,6 +31,14 @@ console.log("ROCK PAPER SCISSORS GAME!!!")
 // now using a for loop, write a function called playgame that runs 5 times, 
 
 //all code should be written at this point and all left to do is call them correctly inside this function
+
+
+function welcomeMessage()
+{
+console.log("hello world, Welcome to: ")
+console.log("ROCK PAPER SCISSORS GAME!!!")
+}
+
 function getComputerChoice() {
     let randomChoice = Math.random();
     let computerChoice;
@@ -56,7 +60,7 @@ function getHumanChoice() {
     let humanChoice = prompt("Enter a choice: rock, paper, or scissor").toLowerCase();
     //ensure it transforms answer to lower case, must be correct or else error
 
-    while (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissor") {
+    while (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
         console.log("Sorry, choice is incorrect. Choose again :)");
         humanChoice = prompt("Enter a choice: rock, paper, or scissor").toLowerCase();
     }
@@ -95,6 +99,7 @@ function playRound(humanChoice, computerChoice) {
         console.log(`Scores => You: ${humanScore}, Computer: ${computerScore}`);
 }
 
+
 function playGame(){
 
     //call welcome message;
@@ -110,19 +115,28 @@ function playGame(){
         playRound(humanChoice,computerChoice);
 
         //output a final score message
-        console.log(`final score Human: ${humanScore} ----- Computer: ${computerScore}`);
+        console.log("")
         console.log("____Next round____")
+
     }
+    console.log(`final score Human: ${humanScore} ----- Computer: ${computerScore}\n`);
+
 }
+//notify user to upen up console first, before inputting options and ask them to call the playGame function
 
-playGame();
-// this is for 1 round, use this for the playgame of 5 rounds
-// welcomeMessage();
 
-// let computerChoice = getComputerChoice();
-// let humanChoice = getHumanChoice();
+ alert("Open the console (F12 or right-click → Inspect → Console tab) to see the game results! " + 
+    "then type playGame() to start."
+ );
 
-// playRound(humanChoice, computerChoice);
+
+console.log(`type playGame() to start.\n`)
+
+
+
+
+
+
 
 
 ///to fix, final score could be misleading as it prints after every loop
