@@ -32,6 +32,8 @@
 
 //all code should be written at this point and all left to do is call them correctly inside this function
 
+//issue: unable to open up console, due to auto prompts. disable and add instructions to open console first.
+
 
 function welcomeMessage()
 {
