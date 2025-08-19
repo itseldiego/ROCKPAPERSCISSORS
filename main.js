@@ -38,7 +38,7 @@
 function welcomeMessage()
 {
 console.log("hello world, Welcome to: ")
-console.log("ROCK PAPER SCISSORS GAME!!!")
+console.log("ROCK PAPER SCISSORS GAME!!!\n\n")
 }
 
 function getComputerChoice() {
@@ -53,6 +53,7 @@ function getComputerChoice() {
         computerChoice = "scissor";
     }
 
+    console.log("\n for testing purposes, printing computers choice")
     console.log("Computer chose " + computerChoice);
     return computerChoice;
 }
